@@ -16,6 +16,6 @@ def rechercher_livre(donnees, mot):
     mot = mot.lower()
     resultats = []
     for livre in donnees["livres"]:
-        if mot in livre["titre"].lower() or mot in livre["auteur"].lower():
+        if mot in livre["titre"].lower() or mot in livre["auteurs"].lower():
             resultats.append(livre)
     return resultats
